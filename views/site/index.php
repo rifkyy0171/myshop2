@@ -11,18 +11,17 @@
 							<li data-target="#slider-carousel" data-slide-to="1"></li>
 							<li data-target="#slider-carousel" data-slide-to="2"></li>
 						</ol>
-						
 						<div class="carousel-inner">
 							<div class="item active">
 								<div class="col-sm-6">
 									<h1><span>E</span>-SHOPPER</h1>
-									<h2>Free E-Commerce Template</h2>
+									<h2></h2>
 									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
 									<button type="button" class="btn btn-default get">Get it now</button>
 								</div>
 								<div class="col-sm-6">
 									<img src=<?= Url::base().'/templates/eshopper/images/home/girl1.jpg' ?> class="girl img-responsive" alt="" />
-									<img src=<?= Url::base().'/templates/eshopper/images/home/pricing.png' ?> class="pricing' ?> alt="" />
+									<img src=<?= Url::base().'/templates/eshopper/images/home/pricing.png' ?> class="pricing" alt="" />
 								</div>
 							</div>
 							<div class="item">
@@ -84,8 +83,8 @@
 								<div id="pakaian" class="panel-collapse collapse">
 									<div class="panel-body">
 										<ul>
-											<li><a href="#">Pakaian Pria</a></li>
-											<li><a href="#">Pakaian Wanita</a></li>
+											<li><a href=<?= Url::base()."/site/pakaian-pria" ?>>Pakaian Pria</a></li>
+											<li><a href=<?= Url::base()."/site/pakaian-wanita" ?>>Pakaian Wanita</a></li>
 										</ul>
 									</div>
 								</div>
@@ -93,84 +92,25 @@
 							<div class="panel panel-default">
 								<div class="panel-heading">
 									<h4 class="panel-title">
-										<a data-toggle="collapse" data-parent="#accordian" href="#mens">
+										<a data-toggle="collapse" data-parent="#accordian" href="#aksesoris">
 											<span class="badge pull-right"><i class="fa fa-plus"></i></span>
-											Mens
+											Aksesoris
 										</a>
 									</h4>
 								</div>
-								<div id="mens" class="panel-collapse collapse">
+								<div id="aksesoris" class="panel-collapse collapse">
 									<div class="panel-body">
 										<ul>
-											<li><a href="#">Fendi</a></li>
-											<li><a href="#">Guess</a></li>
-											<li><a href="#">Valentino</a></li>
-											<li><a href="#">Dior</a></li>
-											<li><a href="#">Versace</a></li>
-											<li><a href="#">Armani</a></li>
-											<li><a href="#">Prada</a></li>
-											<li><a href="#">Dolce and Gabbana</a></li>
-											<li><a href="#">Chanel</a></li>
-											<li><a href="#">Gucci</a></li>
-										</ul>
-									</div>
-								</div>
-							</div>
-							
-							<div class="panel panel-default">
-								<div class="panel-heading">
-									<h4 class="panel-title">
-										<a data-toggle="collapse" data-parent="#accordian" href="#womens">
-											<span class="badge pull-right"><i class="fa fa-plus"></i></span>
-											Womens
-										</a>
-									</h4>
-								</div>
-								<div id="womens" class="panel-collapse collapse">
-									<div class="panel-body">
-										<ul>
-											<li><a href="#">Fendi</a></li>
-											<li><a href="#">Guess</a></li>
-											<li><a href="#">Valentino</a></li>
-											<li><a href="#">Dior</a></li>
-											<li><a href="#">Versace</a></li>
+											<li><a href=<?= Url::base()."/site/perlengkapan-sekolah" ?>>Perlengkapan Sekolah</a></li>
+											<li><a href=<?= Url::base()."/site/perlengkapan-rumah" ?>>Perlengkapan Rumah</a></li>
+											
 										</ul>
 									</div>
 								</div>
 							</div>
 							<div class="panel panel-default">
 								<div class="panel-heading">
-									<h4 class="panel-title"><a href="#">Kids</a></h4>
-								</div>
-							</div>
-							<div class="panel panel-default">
-								<div class="panel-heading">
-									<h4 class="panel-title"><a href="#">Fashion</a></h4>
-								</div>
-							</div>
-							<div class="panel panel-default">
-								<div class="panel-heading">
-									<h4 class="panel-title"><a href="#">Households</a></h4>
-								</div>
-							</div>
-							<div class="panel panel-default">
-								<div class="panel-heading">
-									<h4 class="panel-title"><a href="#">Interiors</a></h4>
-								</div>
-							</div>
-							<div class="panel panel-default">
-								<div class="panel-heading">
-									<h4 class="panel-title"><a href="#">Clothing</a></h4>
-								</div>
-							</div>
-							<div class="panel panel-default">
-								<div class="panel-heading">
-									<h4 class="panel-title"><a href="#">Bags</a></h4>
-								</div>
-							</div>
-							<div class="panel panel-default">
-								<div class="panel-heading">
-									<h4 class="panel-title"><a href="#">Shoes</a></h4>
+									<h4 class="panel-title"><a href=<?= Url::base()."/site/seni" ?>>Seni</a></h4>
 								</div>
 							</div>
 						</div><!--/category-products-->
@@ -259,7 +199,7 @@
 					<div class="category-tab"><!--category-tab-->
 						<div class="col-sm-12">
 							<ul class="nav nav-tabs">
-								<li class="active"><a href="#pakaian-pria" data-toggle="tab">Pakaian Pria</a></li>
+								<li class="active"><a href="#tshirt" data-toggle="tab">T-Shirt</a></li>
 								<li><a href="#blazers" data-toggle="tab">Blazers</a></li>
 								<li><a href="#sunglass" data-toggle="tab">Sunglass</a></li>
 								<li><a href="#kids" data-toggle="tab">Kids</a></li>
@@ -267,32 +207,62 @@
 							</ul>
 						</div>
 						<div class="tab-content">
-							<div class="tab-pane fade active in" id="pakaian-pria" >
+							<div class="tab-pane fade active in" id="tshirt" >
 								<div class="col-sm-3">
-									<?php foreach($dataProduk as $produk) { 
-											if($produk->id_kategori == 1){ ?>
-												
 									<div class="product-image-wrapper">
 										<div class="single-products">
 											<div class="productinfo text-center">
-												<img src="<?=Url::base().'/'.$produk->gambar_produk  ?>" alt="" />
-												<h2><?= $produk->harga_jual ?></h2>
-												<p><?= $produk->nama_produk ?></p>
-												<?= Html::a('Beli',['produk/pesan','id'=>$produk->id_produk],[
-													'class'=>'btn btn-default add-to-cart',
-													'data-toggle'=>'modal',
-													'data-target'=>'#myModal',
-													'data-title'=>$produk->nama_produk,
-												]) ?>
-												
+												<img src=<?= Url::base().'/templates/eshopper/images/home/gallery1.jpg' ?> alt="" />
+												<h2>$56</h2>
+												<p>Easy Polo Black Edition</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 											</div>
 											
 										</div>
 									</div>
-									<?php } } ?>
 								</div>
-								
-							<div class="tab-pane fade" id="pakaian-wanita" >
+								<div class="col-sm-3">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<img src=<?= Url::base().'/templates/eshopper/images/home/gallery2.jpg' ?> alt="" />
+												<h2>$56</h2>
+												<p>Easy Polo Black Edition</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+											</div>
+											
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-3">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<img src=<?= Url::base().'/templates/eshopper/images/home/gallery3.jpg' ?> alt="" />
+												<h2>$56</h2>
+												<p>Easy Polo Black Edition</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+											</div>
+											
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-3">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<img src=<?= Url::base().'/templates/eshopper/images/home/gallery4.jpg' ?> alt="" />
+												<h2>$56</h2>
+												<p>Easy Polo Black Edition</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+											</div>
+											
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<div class="tab-pane fade" id="blazers" >
 								<div class="col-sm-3">
 									<div class="product-image-wrapper">
 										<div class="single-products">
