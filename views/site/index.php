@@ -145,7 +145,7 @@
 											<div class="overlay-content">
 												<h2><?= $produk->harga_jual ?></h2>
 												<p><?= $produk->nama_produk ?></p>
-												<?= Html::a('Beli >>',['produk/pesan','id'=>$produk->id_produk],[
+												<?= Html::a('<i class="fa fa-shopping-cart"></i>Beli',['produk/pesan','id'=>$produk->id_produk],[
 												'class'=>'btn btn-default add-to-cart',
 												'data-toggle'=>'modal',
 												'data-target'=>'#myModal',
@@ -159,9 +159,6 @@
 										<li>
 											<?= Html::a('Detail',['produk/view','id'=>$produk->id_produk],[
 												'class'=>'btn btn-default add-to-cart',
-												'data-toggle'=>'modal',
-												'data-target'=>'#myModal',
-												'data-title'=>$produk->nama_produk,
 											]) ?>
 										</li>
 										<li>
